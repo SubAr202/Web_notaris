@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>eNotaris</title>
+  <title>Notaris/PPAT</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
 
 </head>
 
@@ -18,16 +19,17 @@
    <i class="fab fa-whatsapp"></i>
 </a>
 
-<body class="font-sans text-gray-800">
+<body class="font-sans text-white overflow-x-hidden">
   <!-- Header -->
-  <header class="bg-blue-900 shadow p-3 flex justify-between items-center sticky top-0 z-50">
+  <header class="bg-blue-900 shadow p-0 flex justify-between items-center sticky top-0 z-50">
     <div class="flex items-center space-x-4"><img src="images/not.png" alt="Pendirian PT" class="h-20 w-auto">
     <h1  class="text-2xl font-bold text-white"><a href="#">Notaris/PPAT</a></h1>
 </div>
     <nav class="space-x-4 text-white text-sm md:text-base">
       <a href="#" class="hover:text-blue-600 font-medium">Home</a>
-      <a href="#daftar" class="hover:text-blue-600 font-medium">Tentang</a>
-      <a href="#daftar" class="hover:text-blue-600 font-medium">layanan</a>
+      <a href="#galeri" class="hover:text-blue-600 font-medium">Galeri</a>
+      <a href="#layanan" class="hover:text-blue-600 font-medium">Layanan</a>
+      <a href="#tentang" class="hover:text-blue-600 font-medium">Tentang</a>
       <a href="#kontak" class="hover:text-blue-600 font-medium">Kontak</a>
     </nav>
   </header>
@@ -35,8 +37,8 @@
   <!-- Hero -->
   <section class="relative h-screen flex items-center justify-center text-center overflow-hidden px-4">
   <!-- Video Background -->
-  <video autoplay muted loop playsinline class="absolute w-auto min-w-full min-h-full max-w-none z-[-1] object-cover">
-    <source src="images/videoplayback.mp4" type="video/mp4">
+  <video autoplay muted loop playsinline class="absolute w-full h-full object-cover z-[-1]">
+    <source src="images/layar.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
@@ -71,33 +73,188 @@
     <a href="#daftar" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg shadow hover:bg-blue-700 transition">Daftar Sekarang</a>
   </section> --}}
 
+  <!-- Galeri -->
+   <section id="galeri" class="py-20 px-6 max-w-6xl mx-auto">
+  <h3 class="text-3xl font-semibold text-center mb-12 text-blue-700" data-aos="fade-down">Galeri</h3>
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <!-- Galeri 1 -->
+<div data-aos="zoom-in" data-aos-delay="35">
+  <div class="bg-white shadow-lg rounded-2xl p-6 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+    <img src="images/rapat1.jpg" alt="Pendirian PT" class="w-full mb-4 rounded-lg object-cover shadow transition-shadow hover:shadow-2xl">
+    
+    <h4 class="text-xl font-bold mb-2 text-blue-700">Rapat 1 </h4>
+    
+    <p class="text-gray-600">
+      Layanan cepat dan sah untuk mendirikan Commanditaire Vennootschap.
+      <span id="moreText1" class="hidden">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam quaerat consequuntur nobis eius fuga soluta veritatis possimus sint accusantium sunt, omnis sit vel sed? Esse quo consequatur voluptas. Molestiae?
+      </span>
+    </p>
+    
+    <button onclick="toggleText('moreText1', this)" class="text-blue-600 hover:text-blue-800 font-semibold text-sm mt-2">
+      Read More →
+    </button>
+  </div>
+</div>
+
+
+
+    <!-- Galeri 2 -->
+    <div data-aos="zoom-in" data-aos-delay="35">
+  <div class="bg-white shadow-lg rounded-2xl p-6 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+    <img src="images/rapat2.jpg" alt="Pendirian PT" class="w-full mb-4 rounded-lg object-cover shadow transition-shadow hover:shadow-2xl">
+    
+    <h4 class="text-xl font-bold mb-2 text-blue-700">Rapat 2</h4>
+    
+    <p class="text-gray-600">
+      Layanan cepat dan sah untuk mendirikan Commanditaire Vennootschap.
+      <span id="moreText2" class="hidden">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam quaerat consequuntur nobis eius fuga soluta veritatis possimus sint accusantium sunt, omnis sit vel sed? Esse quo consequatur voluptas. Molestiae?
+      </span>
+    </p>
+    
+    <button onclick="toggleText('moreText2', this)" class="text-blue-600 hover:text-blue-800 font-semibold text-sm mt-2">
+      Read More →
+    </button>
+  </div>
+</div>
+
+
+    <!-- Galeri 3 -->
+       <div data-aos="zoom-in" data-aos-delay="35">
+  <div class="bg-white shadow-lg rounded-2xl p-6 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+    <img src="images/rapat3.jpg" alt="Pendirian PT" class="w-full mb-4 rounded-lg object-cover shadow transition-shadow hover:shadow-2xl">
+    
+    <h4 class="text-xl font-bold mb-2 text-blue-700">Rapat 3</h4>
+    
+    <p class="text-gray-600">
+      Layanan cepat dan sah untuk mendirikan Commanditaire Vennootschap.
+      <span id="moreText3" class="hidden">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam quaerat consequuntur nobis eius fuga soluta veritatis possimus sint accusantium sunt, omnis sit vel sed? Esse quo consequatur voluptas. Molestiae?
+      </span>
+    </p>
+    
+    <button onclick="toggleText('moreText3', this)" class="text-blue-600 hover:text-blue-800 font-semibold text-sm mt-2">
+      Read More →
+    </button>
+  </div>
+</div>
+    <!-- Galeri 4 -->
+       <div data-aos="zoom-in" data-aos-delay="35">
+  <div class="bg-white shadow-lg rounded-2xl p-6 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+    <img src="images/rapat3.jpg" alt="Pendirian PT" class="w-full mb-4 rounded-lg object-cover shadow transition-shadow hover:shadow-2xl">
+    
+    <h4 class="text-xl font-bold mb-2 text-blue-700">Rapat 4</h4>
+    
+    <p class="text-gray-600">
+      Layanan cepat dan sah untuk mendirikan Commanditaire Vennootschap.
+      <span id="moreText4" class="hidden">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam quaerat consequuntur nobis eius fuga soluta veritatis possimus sint accusantium sunt, omnis sit vel sed? Esse quo consequatur voluptas. Molestiae?
+      </span>
+    </p>
+    
+    <button onclick="toggleText('moreText4', this)" class="text-blue-600 hover:text-blue-800 font-semibold text-sm mt-2">
+      Read More →
+    </button>
+  </div>
+</div>
+    <!-- Galeri 5 -->
+       <div data-aos="zoom-in" data-aos-delay="35">
+  <div class="bg-white shadow-lg rounded-2xl p-6 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+    <img src="images/rapat3.jpg" alt="Pendirian PT" class="w-full mb-4 rounded-lg object-cover shadow transition-shadow hover:shadow-2xl">
+    
+    <h4 class="text-xl font-bold mb-2 text-blue-700">Rapat 5</h4>
+    
+    <p class="text-gray-600">
+      Layanan cepat dan sah untuk mendirikan Commanditaire Vennootschap.
+      <span id="moreText5" class="hidden">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam quaerat consequuntur nobis eius fuga soluta veritatis possimus sint accusantium sunt, omnis sit vel sed? Esse quo consequatur voluptas. Molestiae?
+      </span>
+    </p>
+    
+    <button onclick="toggleText('moreText5', this)" class="text-blue-600 hover:text-blue-800 font-semibold text-sm mt-2">
+      Read More →
+    </button>
+  </div>
+</div>
+
+    <!-- Galeri 6 -->
+       <div data-aos="zoom-in" data-aos-delay="35">
+  <div class="bg-white shadow-lg rounded-2xl p-6 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+    <img src="images/rapat3.jpg" alt="Pendirian PT" class="w-full mb-4 rounded-lg object-cover shadow transition-shadow hover:shadow-2xl">
+    
+    <h4 class="text-xl font-bold mb-2 text-blue-700">Rapat 6</h4>
+    
+    <p class="text-gray-600">
+      Layanan cepat dan sah untuk mendirikan Commanditaire Vennootschap.
+      <span id="moreText6" class="hidden">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam quaerat consequuntur nobis eius fuga soluta veritatis possimus sint accusantium sunt, omnis sit vel sed? Esse quo consequatur voluptas. Molestiae?
+      </span>
+    </p>
+    
+    <button onclick="toggleText('moreText6', this)" class="text-blue-600 hover:text-blue-800 font-semibold text-sm mt-2">
+      Read More →
+    </button>
+  </div>
+</div>
+</section>
+  <!--Penutup Galeri -->
+
+
   <!-- Layanan -->
   <section id="layanan" class="py-20 px-6 max-w-6xl mx-auto">
   <h3 class="text-3xl font-semibold text-center mb-12 text-blue-700" data-aos="fade-down">Layanan Kami</h3>
   <div class="grid md:grid-cols-3 gap-8">
 
     <!-- Layanan 1 -->
+    <div data-aos="fade-right" data-aos-delay="35">
     <div class="bg-white shadow-lg rounded-2xl p-6 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
-      <img src="images/notaris.jpg" alt="Pendirian PT" class="w-full mb-4 rounded-lg object-cover shadow transition-shadow hover:shadow-2xl">
+      <img src="images/notaris.jpg" alt="Pendirian PT" class="w-full h-52 object-cover rounded-lg mb-4 shadow transition-shadow hover:shadow-2xl">
       <h4 class="text-xl font-bold mb-2 text-blue-700">Pendirian PT</h4>
       <p class="text-gray-600">Kami bantu Anda mendirikan badan usaha secara legal dan cepat.</p>
     </div>
-
+    </div>
     <!-- Layanan 2 -->
+    <div data-aos="zoom-in" data-aos-delay="35">
     <div class="bg-white shadow-lg rounded-2xl p-6 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
-      <img src="images/notaris.jpg" alt="Pendirian PT" class="w-full mb-4 rounded-lg object-cover shadow transition-shadow hover:shadow-2xl">
+      <img src="images/notaris2.jpg" alt="Pembuatan CV" class="w-full h-52 object-cover rounded-lg mb-4 shadow transition-shadow hover:shadow-2xl">
       <h4 class="text-xl font-bold mb-2 text-blue-700">Pembuatan CV</h4>
       <p class="text-gray-600">Layanan cepat dan sah untuk mendirikan Commanditaire Vennootschap.</p>
     </div>
+    </div>
 
     <!-- Layanan 3 -->
+    <div data-aos="fade-left" data-aos-delay="35">
     <div class="bg-white shadow-lg rounded-2xl p-6 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
-     <img src="images/notaris.jpg" alt="Pendirian PT" class="w-full mb-4 rounded-lg object-cover shadow transition-shadow hover:shadow-1xl">
+    <img src="images/notaris3.jpg" alt="Perjanjian Kerjasama" class="w-full h-52 object-cover rounded-lg mb-4 shadow transition-shadow hover:shadow-2xl">
       <h4 class="text-xl font-bold mb-2 text-blue-700">Perjanjian Kerjasama</h4>
       <p class="text-gray-600">Dokumen kerja sama yang sah secara hukum untuk usaha Anda.</p>
     </div>
   </div>
 </section>
+
+    <!-- Tentang -->
+  <section id="tentang" class="py-20 px-6 max-w-6xl mx-auto">
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    
+    <div class="w-full md:w-1/2"data-aos="fade-right" data-aos-delay="35">
+      <img src="images/about.png" alt="Gambar Notaris" class="rounded-lg shadow-lg w-full" />
+    </div>
+
+    <div class="w-full md:w-1/2 text-left"data-aos="fade-left" data-aos-delay="35">
+      <h3 class="text-2xl font-bold text-blue-700 mb-4">Mengapa Memilih Kami?</h3>
+      <p class="text-gray-700 text-lg mb-2">
+        Kami menyediakan layanan notaris yang cepat, terpercaya, dan profesional. Dengan tim ahli yang berpengalaman, Anda dapat menyelesaikan proses hukum dengan lebih mudah dan nyaman.
+      </p>
+      <p class="text-gray-700 text-lg">
+        Hubungi kami sekarang untuk konsultasi gratis dan mulai proses pendirian usaha Anda!
+      </p>
+    </div>
+  </div>
+</section>
+
+
 
   {{-- <section id="layanan" class="py-20 px-6 max-w-6xl mx-auto">
     <h3 class="text-3xl font-semibold text-center mb-12 text-blue-700">Layanan Kami</h3>
@@ -151,6 +308,7 @@
         <li><a href="#layanan" class="hover:text-blue-300 transition">Layanan</a></li>
         <li><a href="#daftar" class="hover:text-blue-300 transition">Daftar</a></li>
         <li><a href="#kontak" class="hover:text-blue-300 transition">Kontak</a></li>
+       
       </ul>
     </div>
 
@@ -183,6 +341,15 @@
     &copy; 2025 eNotaris. Seluruh hak cipta dilindungi.
   </div>
 </footer>
+<script src="js/script.js"></script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // durasi animasi
+    once: true      // animasi hanya jalan sekali saat scroll
+  });
+</script>
 
 </body>
 </html>

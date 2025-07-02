@@ -16,4 +16,13 @@ AOS.init({
 });
 
 
-
+function toggleText(id, btn) {
+  const text = document.getElementById(id);
+  if (text.classList.contains("hidden")) {
+    text.classList.remove("hidden");
+    btn.innerText = "Read Less ←";
+  } else {
+    text.classList.add("hidden");
+    btn.innerText = "Read More →";
+  }
+}
